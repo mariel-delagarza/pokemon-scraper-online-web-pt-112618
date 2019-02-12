@@ -20,4 +20,9 @@ class Pokemon
     Pokemon.new(id: pokemon_detail[0], name: pokemon_detail[1], type: pokemon_detail[2], db: db)
   end
 
+  def hp_default
+    self.hp = 60
+    self
+  end
+
 end
